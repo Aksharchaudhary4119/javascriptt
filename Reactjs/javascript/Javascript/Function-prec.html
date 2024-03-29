@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <ul>
+        <li>1. Example</li>
+    </ul>
+<pre>
+
+    <!-- <script> -->
+        function yearsToDays(years) {
+            return days +365;
+        }
+        
+        function daysToYears(days) {
+            return  years +10;
+        }
+        
+        let years = 10;
+        let days = 3650;
+        
+        console.log(years + " years id equal to " + yearsToDays(years) + " days.");
+        console.log(days + " days is equal to " + daysToYears(days) + " year.");
+
+       // output 10 years id equal to 4015 days.
+       //output 3650 days is equal to 20 year.
+         
+    <!-- //  </script> -->
+        
+    </pre>
+<ul>
+    <li>2. Example</li>
+</ul>
+
+<pre>
+
+    <!-- <script> -->
+        
+        function fahrenheitToCelsius(fahrenheit) {
+            return(5/9)*(fahrenheit-45);
+        }
+        
+        let fahrenheitTemp = 68
+        let CelsiusTemp = 
+        
+        fahrenheitToCelsius(fahrenheitTemp);
+        console.log(fahrenheitTemp + " Fahrenheit is equal to  " + CelsiusTemp.toFixed(3) + " Celsius ");
+        // </script>
+        // output 68 Fahrenheit is equal to  12.778 Celsius
+
+    </pre>
+        
+        <ul>
+            <li>3. Example</li>
+        </ul>
+
+        <pre>
+                    function factorial(n) {
+                        if(n === 0 || n === 1){
+                            
+                            return 1;
+                        }
+                        else{
+                            let result = 1;
+                            for (let i = 3; i <n; i++){
+                                result *=i;
+                                
+                            }
+                            return result
+                        }
+                    }
+                    
+                    const number = 7;
+                    console.log(" Factorial of " , number, " is " , factorial(number));
+                    
+                    // output  Factorial of  7  is  360
+                    
+                    
+               </pre> 
+                
+               <h3>Get maximum number</h3>
+               <input type="number" id ="num3" placeholder="Enter your name">
+               <input type="number" id ="num4" placeholder="Enter your name">
+               <p id ="mytext">My answer:</p>
+               <button id = "btn">Click me</button>
+           
+               <script>
+                   document.getElementById("btn").addEventListener("click", () =>{
+                       const n3 = document.getElementById("num3");
+                       const n4 = document.getElementById("num4");
+           
+                       function getMax(num3,num4){
+                           if(num3>num4){
+                               return num3;
+                           }
+                           else{
+                               return num4;
+                           }
+                       }
+                       const maxnumber = getMax(Number(n3.value),Number(n4.value));
+                       document.getElementById("mytext").innerHTML= maxnumber;
+                   })
+              </script>
+
+
+
+<h3>Get sum of two numbers</h3>
+    <input type="number" id = "num1" placeholder="Enter your name">
+    <input type="number" id = "num2" placeholder="Enter your name">
+    <p id = "demo">My answer:</p>
+    <button id ="btn2">Click me</button>
+
+    <script>
+        document.getElementById("btn2").addEventListener("click", () =>{
+            const n1 = document.getElementById("num1");
+            const n2 = document.getElementById("num2");
+
+            const sum = Number(n1.value) + Number(n2.value);
+
+            document.getElementById("demo").innerHTML = sum;
+        })
+    </script>
+            
+    
+            
+            
+            
+            
+</body>
+</html>

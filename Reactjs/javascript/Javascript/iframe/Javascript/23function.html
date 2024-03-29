@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h2>what is function</h2>
+    <p>Functions are one of the fundamental building blocks in JavaScript. A function in JavaScript is similar
+       to a procedure—a set of statements that performs a task or calculates a value, but for a procedure to qualify
+       as a function, it should take some input and return an output where there is some obvious relationship 
+       between the input and the output. To use a function, you must define it somewhere in the scope from which 
+       you wish to call it.</p>
+
+       <h2>Defining functions</h2>
+       <h3>Function declarations</h3>
+       <p>A function definition (also called a function declaration, or function statement) consists of the function keyword, 
+        followed by:</p>
+
+        <ul>
+            <li>The name of the function</li>
+            <li>A list of parameters to the function, enclosed in parentheses and sepreted by commas.</li>
+            <li>The JavaScript statement that define the function, enclosed in curly braces, {/*...*/ }.</li>
+        </ul>
+
+        <h3>
+            <li>For Example, the following code defines a simple function named square:</li>
+        </h3>
+
+        <pre>
+            function square(number) {
+                return number * number;
+            }
+        </pre>
+
+    <p>The function square takes one parameter, called number. The function consists of one statement that says 
+        to return the parameter of the function (that is, number) multiplied by itself. The return statement specifies 
+        the value returned by the function, which is number * number.</p>    
+
+    <p>Parameters are essentially passed to functions by value — so if the code within the body of a function 
+       assigns a completely new value to a parameter that was passed to the function, the change is not reflected 
+       globally or in the code which called that function.</p>
+
+       <p>When you pass an object as a parameter, if the function changes the object's properties, that change is 
+         visible outside the function, as shown in the following example:</p>
+
+
+         <pre>
+             <!-- <script> -->
+                 function myfunc(theobject) {
+                     theobject.make = "Toyota";
+                    }
+                    
+                    const mycar = {
+                        make: "Honda",
+                        model: "Accord",
+                        year: 1998,
+                    };
+
+                    console.log(mycar.make); // Honda 
+                    myfunc(mycar);
+                    console.log(mycar.make); // Toyota
+                    <!-- </script> -->
+
+            <p>When you pass an array as a parameter, if the function changes any of the array's values, 
+that change is visible outside the function, as shown in the following example:</p>
+                
+                <!-- <script> -->
+                    function myfunc(theArr) {
+                        theArr[0]= 30;
+                    }
+                    
+                    const arr = [55]
+                    
+                    console.log(arr[0]); // 55
+                    myfunc(arr);
+                    console.log(arr[2]); // undefined
+                    
+                    <!-- </script> -->
+                    
+                </pre>
+
+                <h2>JavaScript Function Syntax</h2>
+                <p>A JavaScript function is defined with the <code class="w3-codespan">function</code> keyword,
+                  followed by a <strong>name</strong>, followed by parentheses <strong>()</strong>.</p>
+              
+                <p>Function names can contain letters, digits, underscores, and dollar signs
+                  (same rules as variables).</p>
+                <p>The parentheses may include parameter names separated by commas:<br>
+                  <strong>(<em>parameter1, parameter2, ...</em>)</strong>
+                </p>
+                <p>The code to be executed, by the function, is placed inside curly brackets: <strong>{}</strong></p>
+                <div class="w3-example">
+                  <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                      <span class="jskeywordcolor" style="color:mediumblue">function</span>
+                      <em>name</em>(<em>parameter1, parameter2, parameter3</em>) {<br><span class="jsnumbercolor" style="color:red">
+                      </span> &nbsp; <span class="commentcolor" style="color:green">// <em>code to be executed</em><br></span><span
+                        class="jsnumbercolor" style="color:red">
+                      </span>}<span class="jsnumbercolor" style="color:red">
+                      </span> </span></div>
+                </div>
+              
+                <p>Function <strong>parameters</strong> are listed inside the parentheses () in
+                  the function definition.</p>
+                <p>Function <strong>arguments</strong> are the <strong>values</strong>
+                  received by the function when it is invoked.</p>
+                <p>Inside the function, the arguments (the parameters) behave as local variables.</p>
+              
+                <hr>
+                <h2>Function Invocation</h2>
+                <p>The code inside the function will execute when "something" <strong>invokes</strong> (calls) the
+                  function:</p>
+                <ul>
+                  <li>When an event occurs (when a user clicks a button)</li>
+                  <li>When it is invoked (called) from JavaScript code</li>
+                  <li>Automatically (self invoked)</li>
+                </ul>
+                <p>You will learn a lot more about function invocation later in this
+                  tutorial.</p>
+                <hr>
+                <div id="midcontentadcontainer" style="overflow:auto;text-align:center">
+                  <!-- MidContent -->
+                  <!-- <p class="adtext">Advertisement</p> -->
+              
+               
+                </div>
+                <hr>
+              
+                <h2>Function Return</h2>
+              
+                <p>When JavaScript reaches a <code class="w3-codespan">return</code> statement,
+                  the function will stop executing.</p>
+                <p>If the function was invoked from a statement, JavaScript will
+                  "return" to execute the code after the invoking statement.</p>
+                <p>Functions often compute a <strong>return value</strong>. The return value is
+                  "returned" back to
+                  the "caller":</p>
+                <div class="w3-example">
+                  <h3>Example</h3>
+                  <p>Calculate the product of two numbers, and return the result:</p>
+                  <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black"><span class="jsnumbercolor"
+                        style="color:red">
+                      </span><span class="commentcolor" style="color:green">// Function is called, the return value will end up in
+                        x<br></span>
+                      <span class="jskeywordcolor" style="color:mediumblue">let</span> x = myFunction(<span class="jsnumbercolor"
+                        style="color:red">4</span>, <span class="jsnumbercolor" style="color:red">3</span>);<br><span
+                        class="jsnumbercolor" style="color:red">
+                      </span><br>
+                      <span class="jskeywordcolor" style="color:mediumblue">function</span> myFunction(a, b) {<br><span
+                        class="jsnumbercolor" style="color:red">
+                      </span><span class="commentcolor" style="color:green">// Function returns the product of a and b<br></span><span
+                        class="jsnumbercolor" style="color:red">
+                      </span> &nbsp; <span class="jskeywordcolor" style="color:mediumblue">return</span> a * b;<br><span
+                        class="jsnumbercolor" style="color:red">
+                      </span>}<br><span class="jsnumbercolor" style="color:red">
+                      </span> </span></div>
+                  <a target="_blank" href="tryit.asp?filename=tryjs_function_return" class="w3-btn w3-margin-bottom">Try it Yourself
+                    »</a>
+                </div>
+              
+                <div class="w3-note">
+                  <h2>Why Functions?</h2>
+                  <p>With functions you can reuse code</p>
+                  <p>You can write code that can be used many times.</p>
+                  <p>You can use the same code with different arguments, to produce different results.</p>
+                </div>
+                <hr>
+                <h2>The () Operator</h2>
+              
+                <p>The () operator invokes (calls) the function:</p>
+                <div class="w3-example">
+                  <h3>Example</h3>
+                  <p>Convert Fahrenheit to Celsius:</p>
+                  <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                      <span class="jskeywordcolor" style="color:mediumblue">function</span> toCelsius(fahrenheit) {<br><span
+                        class="jsnumbercolor" style="color:red">
+                      </span> &nbsp; <span class="jskeywordcolor" style="color:mediumblue">return</span> (<span class="jsnumbercolor"
+                        style="color:red">5</span>/<span class="jsnumbercolor" style="color:red">9</span>) * (fahrenheit-<span
+                        class="jsnumbercolor" style="color:red">32</span>);<br><span class="jsnumbercolor" style="color:red">
+                      </span>}<br><span class="jsnumbercolor" style="color:red">
+                      </span><br>
+                      <span class="jskeywordcolor" style="color:mediumblue">let</span> value = toCelsius(<span class="jsnumbercolor"
+                        style="color:red">77</span>);<span class="jsnumbercolor" style="color:red">
+                      </span> </span></div>
+                  <a target="_blank" href="tryit.asp?filename=tryjs_farenheit_to_celsius" class="w3-btn w3-margin-bottom">Try it
+                    Yourself »</a>
+                </div>
+              
+                <p>Accessing a function with incorrect parameters can return an incorrect answer:</p>
+                <div class="w3-example">
+                  <h3>Example</h3>
+                  <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                      <span class="jskeywordcolor" style="color:mediumblue">function</span> toCelsius(fahrenheit) {<br><span
+                        class="jsnumbercolor" style="color:red">
+                      </span> &nbsp; <span class="jskeywordcolor" style="color:mediumblue">return</span> (<span class="jsnumbercolor"
+                        style="color:red">5</span>/<span class="jsnumbercolor" style="color:red">9</span>) * (fahrenheit-<span
+                        class="jsnumbercolor" style="color:red">32</span>);<br><span class="jsnumbercolor" style="color:red">
+                      </span>}<br><span class="jsnumbercolor" style="color:red">
+                      </span><br>
+                      <span class="jskeywordcolor" style="color:mediumblue">let</span> value = toCelsius(); </span></div>
+                  <a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_farenheit_to_celsius_3" target="_blank">Try it
+                    Yourself »</a>
+                </div>
+              
+                <p>Accessing a function without () returns the function and not the function result:</p>
+                <div class="w3-example">
+                  <h3>Example</h3>
+                  <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                      <span class="jskeywordcolor" style="color:mediumblue">function</span> toCelsius(fahrenheit) {<br><span
+                        class="jsnumbercolor" style="color:red">
+                      </span> &nbsp; <span class="jskeywordcolor" style="color:mediumblue">return</span> (<span class="jsnumbercolor"
+                        style="color:red">5</span>/<span class="jsnumbercolor" style="color:red">9</span>) * (fahrenheit-<span
+                        class="jsnumbercolor" style="color:red">32</span>);<br><span class="jsnumbercolor" style="color:red">
+                      </span>}<br><span class="jsnumbercolor" style="color:red">
+                      </span><br>
+                      <span class="jskeywordcolor" style="color:mediumblue">let</span> value = toCelsius; </span></div>
+                  <a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_farenheit_to_celsius_2" target="_blank">Try it
+                    Yourself »</a>
+                </div>
+              
+                <div class="w3-note">
+                  <h2>Note</h2>
+                  <p>As you see from the examples above, <code class="w3-codespan">toCelsius</code> refers to the function object, and
+                    <code class="w3-codespan">toCelsius()</code> refers to the function result.
+                  </p>
+                </div>
+                <hr>
+              
+                <h2>Functions Used as Variable Values</h2>
+                <p>Functions can be used the same way as you use variables, in all types of formulas, assignments, and
+                  calculations.</p>
+              
+                <div class="w3-example">
+                  <h3>Example</h3>
+                  <p>Instead of using a variable to store the return value of a function:</p>
+                  <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                      <span class="jskeywordcolor" style="color:mediumblue">let</span> x = toCelsius(<span class="jsnumbercolor"
+                        style="color:red">77</span>);<br>
+                      <span class="jskeywordcolor" style="color:mediumblue">let</span> text = <span class="jsstringcolor"
+                        style="color:brown">"The temperature is "</span> + x + <span class="jsstringcolor" style="color:brown">"
+                        Celsius"</span>;<span class="jsnumbercolor" style="color:red">
+                      </span> </span></div>
+                  <p>You can use the function directly, as a variable value:</p>
+                  <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                      <span class="jskeywordcolor" style="color:mediumblue">let</span> text = <span class="jsstringcolor"
+                        style="color:brown">"The temperature is "</span> + toCelsius(<span class="jsnumbercolor"
+                        style="color:red">77</span>) + <span class="jsstringcolor" style="color:brown">" Celsius"</span>;<span
+                        class="jsnumbercolor" style="color:red">
+                      </span> </span></div>
+                  <a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_function_variable" target="_blank">Try it Yourself
+                    »</a>
+                </div>
+              
+                <div class="w3-panel w3-note">
+                  <p>You will learn a lot more about functions later in this tutorial.</p>
+                </div>
+              
+                <hr>
+                <h2>Local Variables</h2>
+                <p>Variables declared within a JavaScript function, become <strong>
+                    LOCAL</strong> to
+                  the function.</p>
+                <p>Local variables can only be accessed
+                  from within the function.</p>
+              
+                <div class="w3-example">
+                  <h3>Example</h3>
+                  <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black"><span class="jsnumbercolor"
+                        style="color:rgb(220, 158, 158)">
+                      </span><span class="commentcolor" style="color:rgb(220, 158, 158)">// code here can NOT use carName<br></span><br>
+                      <span class="jskeywordcolor" style="color:mediumblue">function</span> myFunction() {<br><span
+                        class="jsnumbercolor" style="color:rgb(220, 158, 158)">
+                      </span>&nbsp;&nbsp;<span class="jskeywordcolor" style="color:mediumblue">let</span> carName = <span
+                        class="jsstringcolor" style="color:rgb(220, 158, 158)">"Volvo"</span>;<br><span class="jsnumbercolor" style="color:red">
+                      </span>&nbsp;&nbsp;<span class="commentcolor" style="color:rgb(220, 158, 158)">// code here CAN use carName<br></span><span
+                        class="jsnumbercolor" style="color:rgb(220, 158, 158)">
+                      </span>}<br><br><span class="jsnumbercolor" style="color:rgb(220, 158, 158)">
+                      </span><span class="commentcolor" style="color:rgb(220, 158, 158)">// code here can NOT use carName
+                      </span></span></div>
+                  <a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_function_scope" target="_blank">Try it Yourself
+                    »</a>
+                </div>
+                <p>Since local variables are only recognized inside their functions, variables with the same name can be used in
+                  different functions.</p>
+                <p>Local variables are created when a function starts, and deleted when the function is completed.</p>
+              
+                <hr>
+              
+                <form autocomplete="off" spellcheck="false" id="w3-exerciseform"
+                  action="exercise_js.asp?filename=exercise_js_functions1" method="post" target="_blank">
+                  <h2>Test Yourself With Exercises</h2>
+                  <div class="exercisewindow">
+                    <h2>Exercise:</h2>
+                    <p>Execute the function named <code class="w3-codespan">myFunction</code>.</p>
+                    <div class="exerciseprecontainer">
+                      <pre>function myFunction() {
+                alert("Hello World!");
+              }
+              <input name="ex1" maxlength="12" style="width: 124px;">;
+              </pre>
+                    </div>
+                    <br>
+                    <button type="submit" class="w3-btn w3-margin-bottom">Submit Answer »</button>
+                    <p><a target="_blank" href="exercise_js.asp?filename=exercise_js_functions1">Start the Exercise</a></p>
+                  </div>
+                </form>
+              
+                <hr>
+                <script>
+              
+                  // var something = "1000 line code"
+                  // var something = "1000 line code"
+                  // var something = "1000 line code"
+                  // var something = "1000 line code"
+                  // var something = "1000 line code"
+              
+                  // Total 5000 line code
+              
+              
+                  // // 1005 line code START
+                  // function lineCode() {
+                  //   return "1000 line code"
+                  // }
+              
+                  // lineCode()
+                  // lineCode()
+                  // lineCode()
+                  // lineCode()
+                  // lineCode()
+              
+                  // 1005 line code END
+              
+              
+              
+              
+                  // defining simple/static function without argument returns fixed value START 
+                  function addition() {
+                    let maths = 50
+                    let comp = 90
+                    return maths+comp
+                  }
+                  // defining simple/static function without argument returns fixed value START 
+                  
+                  // Function Calling START 
+                  console.log(addition());
+                  console.log(addition());
+                  // Function Calling END 
+              
+              
+                  // Defining Dynamic function with argument START 
+                  function dynamicAddition(parameter1,parameter2) {
+                    return parameter1+parameter2
+                  }
+                  // defining Dynamic function with argument START 
+                  
+                  // Function Calling With Argument START 
+                  console.log(dynamicAddition(89,88));
+                  let arg1Maths = 90 
+                  let arg2Comp = 99
+                  console.log(dynamicAddition(arg1Maths,arg2Comp));
+                  // Function Calling With Argument END 
+                  
+                </script>
+
+
+
+
+
+
+</body>
+</html>

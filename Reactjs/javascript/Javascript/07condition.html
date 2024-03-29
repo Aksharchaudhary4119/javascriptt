@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <h1>
+     What is Condition
+  </h1>
+
+  <p><b>Ans:   </b>Conditional statements control behavior in JavaScript and determine whether or not pieces of code can run. There are multiple different types of conditionals in JavaScript including: “If” statements: where if a condition is true it is used to specify execution for a block of code.</p>
+  
+  <h2>if  statement</h2>
+  
+  <p>Use the if statement to specify a block of JavaScript code to be executed if a condition is true.</p>
+  
+  <details>
+  <summary>
+    Example
+  </summary>
+  <p>Make a "Good day" greeting if the hour is less than 18:00:
+
+  </p>  
+
+    <pre>
+      if (hour < 18) {
+        greeting = "Good day";
+      }
+    </pre>
+    
+</details>
+  <h2>else statement</h2>
+
+  <p>Use the else statement to specify a block of code to be executed if the condition is false.</p>
+<details>
+  <summary>
+    Example
+
+  </summary>
+  
+  <p>If the hour is less than 18, create a "Good day" greeting, otherwise "Good evening":</p>
+  
+  <pre>
+    if (hour < 18) {
+      greeting = "Good day";
+    } else {
+      greeting = "Good evening";
+    }
+  </pre>
+  
+</details>
+  <h2>else if statement</h2>
+
+  <p>Use the else if statement to specify a new condition if the first condition is false.</p>
+<details>
+  <summary>
+    Example
+  </summary>
+  
+  <p>If time is less than 10:00, create a "Good morning" greeting, if not, but time is less than 20:00, create a "Good day" greeting, otherwise a "Good evening":</p>
+  
+  <pre>
+    if (time < 10) {
+      greeting = "Good morning";
+    } else if (time < 20) {
+      greeting = "Good day";
+    } else {
+      greeting = "Good evening";
+    }
+    
+    // output Good morning   as a time
+  </pre>
+  
+</details>
+
+  <h2>switch statements</h2>
+
+  <p>if...else statements do the job of enabling conditional code well, but they are not without their downsides. They are mainly good for cases where you've got a couple of choices, and each one requires a reasonable amount of code to be run, and/or the conditions are complex (for example, multiple logical operators). For cases where you just want to set a variable to a certain choice of value or print out a particular statement depending on a condition, the syntax can be a bit cumbersome, especially if you've got a large number of choices.</p>
+
+
+  <p>In such a case, switch statements are your friend — they take a single expression/value as an input, and then look through several choices until they find one that matches that value, executing the corresponding code that goes along with it. Here's some more pseudocode, to give you an idea:</p>
+
+<details>
+  <summary>
+    Example
+  </summary>
+  <pre>
+    switch (expression) {
+      case choice1:
+      // run this code
+      break;
+      
+      
+      case choice2:
+      // run this code instead
+      break;
+      
+      // include as many cases as you like
+      
+      default:
+      // actually, just run this code
+      break;
+    }
+  </pre>
+</details>
+  
+</body>
+</html>

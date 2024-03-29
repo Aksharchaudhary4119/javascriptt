@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function numericalToLetterGrade(grade) {
+        let letterGrade;
+    
+        switch (true) {
+            case (grade >= 90 && grade <= 100):
+                letterGrade = "A";
+                break;
+            case (grade >= 80 && grade < 90):
+                letterGrade = "B";
+                break;
+            case (grade >= 70 && grade < 80):
+                letterGrade = "C";
+                break;
+            case (grade >= 60 && grade < 70):
+                letterGrade = "D";
+                break;
+            case (grade >= 0 && grade < 60):
+                letterGrade = "F";
+                break;
+            default:
+                letterGrade = "Invalid grade, must be between 0 and 100";
+        }
+    
+        return letterGrade;
+    }
+    
+    const gradeInput = prompt("Enter your numerical grade:");
+    
+    const grade = parseFloat(gradeInput);
+    
+    if (!isNaN(grade)) {
+        const letterGrade = numericalToLetterGrade(grade);
+        console.log(`Numerical grade ${grade} is equivalent to letter grade ${letterGrade}`);
+    } else {
+        console.log("Invalid input. Please enter a valid numerical grade.");
+    }
+    </script>
+</body>
+</html>

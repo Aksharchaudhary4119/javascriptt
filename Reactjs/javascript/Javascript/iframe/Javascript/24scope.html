@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h2>Scope</h2>
+
+    <p>Scope determines the accessibility (visibility) of variables.</p>
+
+    <p>JavaScript variables have 3 types of scope:</p>
+    <ul>
+        <li> Block scope</li>
+        <li> Function scope</li>
+        <li> Global scope</li>
+    </ul>
+    <h4>Block Scope</h4>
+
+    <p> Before ES6 (2015), JavaScript variables had only Global Scope and Function Scope.</p>
+    <p> ES6 introduced two important new JavaScript keywords: let and const.</p>
+    <p> These two keywords provide Block Scope in JavaScript.</p>
+    <p> Variables declared inside a { } block cannot be accessed from outside the block:</p>
+    <pre>
+        {
+            let x = 2;
+        }
+        // x can NOT be used here
+        Variables declared with the var keyword can NOT have block scope.
+        
+        Variables declared inside a { } block can be accessed from outside the block.
+        
+        Example
+        {
+            var x = 2;
+        }
+        // x CAN be used here
+    </pre>
+    <h3>Local Scope</h3>
+    <p>Variables declared within a JavaScript function, are LOCAL to the function:</p>
+    <pre>
+        // code here can NOT use carName
+
+        function myFunction() {
+            let carName = "Volvo";
+            // code here CAN use carName
+        }
+
+        // code here can NOT use carName
+    </pre>
+    <p> Local variables have Function Scope:</p>
+    <p> They can only be accessed from within the function.</p>
+    <p> Since local variables are only recognized inside their functions, variables with the same name can be used in
+        different functions.</p>
+    <p> Local variables are created when a function starts, and deleted when the function is completed.</p>
+
+    <h4>Function Scope</h4>
+    <p> JavaScript has function scope: Each function creates a new scope.</p>
+
+    <p> Variables defined inside a function are not accessible (visible) from outside the function.</p>
+
+    <p> Variables declared with var, let and const are quite similar when declared inside a function.</p>
+
+    <p> They all have Function Scope:</p>
+    <pre>
+        function myFunction() {
+          var carName = "Volvo";   // Function Scope
+        }
+        function myFunction() {
+          let carName = "Volvo";   // Function Scope
+        }
+        function myFunction() {
+          const carName = "Volvo";   // Function Scope
+        }
+    </pre>
+    <h4>Global JavaScript Variables</h4>
+    <p>A variable declared outside a function, becomes GLOBAL.</p>
+    <pre>
+        Example
+        let carName = "Volvo";
+        // code here can use carName
+        
+        function myFunction() {
+        // code here can also use carName
+        }
+    </pre>
+    <h4>Global Scope</h4>
+
+    <p> Variables declared Globally (outside any function) have Global Scope.</p>
+
+    <p> Global variables can be accessed from anywhere in a JavaScript program.</p>
+
+    <p> Variables declared with var, let and const are quite similar when declared outside a block.</p>
+
+    <p> They all have Global Scope:</p>
+    <h2>Warning</h2>
+
+    <p>Do NOT create global variables unless you intend to.</p>
+    <p> Your global variables (or functions) can overwrite window variables (or functions).</p>
+    <p> Any function, including the window object, can overwrite your global variables and functions.</p>
+
+
+    <script>
+        "use strict";
+        const v = "Hi! I'm a strict mode script!";
+        let GlobalScope = "GlobalScope"
+        GlobalScp = "GlobalScp"
+        function accessvar(params) {
+            let data = "Something"
+            var functionalScope = "functionalScope  data"
+            console.log(GlobalScope);
+        }
+        // console.log(functionalScope);
+        // console.log(data);
+        console.log(GlobalScope);
+    </script>
+</body>
+
+</html>

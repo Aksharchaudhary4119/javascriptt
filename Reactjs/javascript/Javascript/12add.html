@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+ <input type="text" name="in-data" id="inp-id">
+ <input type="button" value="click me" id="btn">
+
+<script>
+    document.getElementById("btn").addEventListener("click",function () {
+        console.log("called");
+        let InpData = document.getElementsByTagName("input")
+        console.log(InpData);
+        console.log(InpData[0]);
+        console.log(InpData[0].value);
+    })
+</script>
+    
+</body>
+</html>
