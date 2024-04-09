@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .summary{
+      font-size: 20px
+    }
+  </style>
+</head>
+<body style="color: white; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+
+  <h1>
+     What is Condition
+  </h1>
+
+  <p><b>Ans:   </b>Conditional statements control behavior in JavaScript and determine whether or not pieces of code can run. There are multiple different types of conditionals in JavaScript including: “If” statements: where if a condition is true it is used to specify execution for a block of code.</p>
+<p>શરતી નિવેદનો JavaScript માં વર્તનને નિયંત્રિત કરે છે અને કોડના ટુકડાઓ ચાલી શકે છે કે નહીં તે નિર્ધારિત કરે છે. JavaScript માં શરતના વિવિધ પ્રકારો છે જેમાં નીચેનાનો સમાવેશ થાય છે: “if” સ્ટેટમેન્ટ્સ: જ્યાં જો કોઈ શરત સાચી હોય તો તેનો ઉપયોગ કોડના બ્લોક માટે એક્ઝેક્યુશનનો ઉલ્લેખ કરવા માટે થાય છે.</p>  
+
+  <details>
+    <summary class="summary">
+      if  statement
+    </summary>
+    
+    <p>Use the if statement to specify a block of JavaScript code to be executed if a condition is true.</p>
+    
+    <details>
+      <summary>
+        Example
+      </summary>
+      <p>Make a "Good day" greeting if the hour is less than 18:00:
+        
+      </p>  
+      
+      <pre>
+        if (hour < 18) {
+          greeting = "Good day";
+        }
+      </pre>
+    
+</details>
+</details>
+
+<details>
+  <summary class="summary">
+    else statement
+  </summary>
+  
+  <p>Use the else statement to specify a block of code to be executed if the condition is false.</p>
+  <details>
+    <summary>
+      Example
+      
+    </summary>
+    
+    <p>If the hour is less than 18, create a "Good day" greeting, otherwise "Good evening":</p>
+    
+    <pre>
+    if (hour < 18) {
+      greeting = "Good day";
+    } else {
+      greeting = "Good evening";
+    }
+  </pre>
+  
+</details>
+</details>
+
+<details>
+  <summary class="summary">
+    else if statement
+  </summary>
+  
+  <p>Use the else if statement to specify a new condition if the first condition is false.</p>
+<details>
+  <summary>
+    Example
+  </summary>
+  
+  <p>If time is less than 10:00, create a "Good morning" greeting, if not, but time is less than 20:00, create a "Good day" greeting, otherwise a "Good evening":</p>
+  
+  <pre>
+    if (time < 10) {
+      greeting = "Good morning";
+    } else if (time < 20) {
+      greeting = "Good day";
+    } else {
+      greeting = "Good evening";
+    }
+    
+    // output Good morning   as a time
+  </pre>
+  
+</details>
+</details>
+
+<details>
+  <summary class="summary">
+    switch statements
+  </summary>
+  
+  
+  <p>if...else statements do the job of enabling conditional code well, but they are not without their downsides. They are mainly good for cases where you've got a couple of choices, and each one requires a reasonable amount of code to be run, and/or the conditions are complex (for example, multiple logical operators). For cases where you just want to set a variable to a certain choice of value or print out a particular statement depending on a condition, the syntax can be a bit cumbersome, especially if you've got a large number of choices.</p>
+  
+  
+  <p>In such a case, switch statements are your friend — they take a single expression/value as an input, and then look through several choices until they find one that matches that value, executing the corresponding code that goes along with it. Here's some more pseudocode, to give you an idea:</p>
+  
+  <details>
+  <summary>
+    Example
+  </summary>
+  <pre>
+    switch (expression) {
+      case choice1:
+      // run this code
+      break;
+      
+      
+      case choice2:
+      // run this code instead
+      break;
+      
+      // include as many cases as you like
+      
+      default:
+      // actually, just run this code
+      break;
+    }
+  </pre>
+</details>
+</details>
+
+<details>
+  <summary class="summary">
+    Question And Answer
+  </summary>
+  <h2>
+    1. difference between exec () and test () methods
+  </h2>
+  <p>  The difference in between exec() and test() method is that the exec() method will return the specified match if present or null if not present in the given string whereas the test() method returns a Boolean result i.e., true if the specified match is present or else returns false if it is not present</p>
+  <p>
+    exec() અને test() પદ્ધતિ વચ્ચેનો તફાવત એ છે કે exec() પદ્ધતિ આપેલ સ્ટ્રિંગમાં હાજર હોય તો નિર્દિષ્ટ મેચ પરત કરશે અથવા જો આપેલ સ્ટ્રિંગમાં હાજર ન હોય તો શૂન્ય આપશે જ્યારે test() પદ્ધતિ બુલિયન પરિણામ આપે છે એટલે કે સાચું જો ઉલ્લેખિત મેચ હાજર છે અથવા જો તે હાજર ન હોય તો ખોટા પરત કરે છે
+  </p>
+</details>
+  
+</body>
+</html>
