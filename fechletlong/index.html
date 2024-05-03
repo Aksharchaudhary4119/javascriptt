@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>let long</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <section>
+        <div class="container">
+            <label for="text">Place Name:</label>
+            <input type="text" id="inp" placeholder="type a place">
+            
+            <button onclick="asyncCall()" class="btn">Find</button>
+            <p>Add the contry code for better results. Ex: London, UK</p>
+            <div class="flex-2">
+                <div class="flex">
+                    <label class="let" for="">Latitude</label><div class="lon" id="lat-data" for=""></div>
+                </div> 
+                <div class="flex">
+                    <label class="let" for="">longitude</label><span class="lon" id="lng-data" for=""></span>
+                </div>
+            </div>
+            <div class="map" style="width: 100%"><iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=gandhinagar+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">gps systems</a></iframe></div>
+        </div>
+    </section>
+    <script src="App.js"></script>
+</body>
+</html>

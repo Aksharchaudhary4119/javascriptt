@@ -1,0 +1,53 @@
+section{
+    width: 45%;
+    background-color: #def3c5;;
+    height: 700px;
+    margin-left: 15rem;
+    padding: 10rem;
+}
+.btn{
+    padding: 0.7rem 1rem;
+    font-size: 1rem;
+    color: white;
+    background-color: blueviolet;
+}
+.container{
+    text-align: center;
+}
+label{
+    font-size: 2rem;
+    color: black;
+}
+input{
+    padding: 10px;
+    font-size: 1rem;
+}
+p{
+    font-size: 15px;
+    color: black;
+    text-align: center;
+}
+.let{
+    font-size: 25px;
+    padding-left: 1rem;
+}
+.lon{
+    border: solid 2px;
+    /* padding:10px 0px; */
+    height: 30px;
+    width: 8rem;
+    margin-left: 5px;
+    background-color: white;
+}
+.flex{
+    display: flex;
+    /* align-items: center; */
+}
+.flex-2{
+    display: flex;
+    margin-left: 6rem;
+
+}
+.map{
+    margin-top: 2rem;
+}
