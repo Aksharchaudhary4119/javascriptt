@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        // Rest Op START
+        function addition(a,...r) {
+            // console.log(a,b,c);
+            console.log(a,r);
+        }
+
+        addition(50,60,80,80,80)
+        addition(50,60)
+        addition(50,60,80)
+
+        // Rest Op END
+
+
+        function dispData(uname,email,...data) {
+            console.log(uname,email,data);
+        }
+
+        let arr = ['Test',"check@mail.com","987987987","something"]
+        // dispData(arr[0],arr[1],arr[2])
+        dispData(...arr)
+    </script>
+
+</body>
+</html>

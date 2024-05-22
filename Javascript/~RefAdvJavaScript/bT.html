@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="parent">
+        parent
+        <div id="child">
+            child
+            <form action="" method="get">
+                <input type="text" name="inp" id="">
+                <input type="password" name="inp" id="">
+                <input type="email" name="inp" id="">
+                <input type="submit" name="btn" id="">
+            </form>
+        </div>
+    </div>
+<script>
+    // $("#child").click(function () { })
+    // $("#child").on("click",function () { })
+    // document.getElementById("child").addEventListener("click",function () {
+    //     event.stopPropagation()
+    //     console.log("called child");
+    // })
+    // document.getElementById("parent").addEventListener("click",function (event) {
+    //     event.stopPropagation()
+    //     console.log("called parent");
+    // })
+    document.getElementById("child").addEventListener("click",function () {
+        event.stopPropagation()
+        console.log("called child");
+    },false)
+    document.getElementById("parent").addEventListener("click",function (event) {
+        event.stopPropagation()
+        console.log("called parent");
+    },false)
+</script>
+    
+</body>
+</html>

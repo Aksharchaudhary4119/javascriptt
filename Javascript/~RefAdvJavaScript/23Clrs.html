@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h2>Closures</h2>
+    <p>Function returns the function</p>
+    <pre>There is a general programming term “closure”, that developers generally should know.
+
+        A closure is a function that remembers its outer variables and can access them. In some languages, that’s not possible, or a function should be written in a special way to make it happen. But as explained above, in JavaScript, all functions are naturally closures (there is only one exception, to be covered in The "new Function" syntax).
+        
+        That is: they automatically remember where they were created using a hidden [[Environment]] property, and then their code can access outer variables.
+        
+        When on an interview, a frontend developer gets a question about “what’s a closure?”, a valid answer would be a definition of the closure and an explanation that all functions in JavaScript are closures, and maybe a few more words about technical details: the [[Environment]] property and how Lexical Environments work.</pre>
+
+    <script>
+        // function test() {
+        //     // return "a"
+        //     // return "b"
+        //     console.log("called test function");
+        //     const childfunction = () => {
+        //         console.log("called child function");
+        //         return "data"
+        //     }
+        //     let Ans = childfunction()
+        //     return Ans
+        // }
+        // console.log(test());
+        // function test() {
+        //     // return "a"
+        //     // return "b"
+        //     console.log("called test function");
+        //     const childfunction = () => {
+        //         console.log("called child function");
+        //         return "data"
+        //     }
+        //     return childfunction
+        //     // let Ans = childfunction
+        //     // return Ans
+        // }
+        // // console.log(test());
+        // // console.log(test()());
+        // let TestRes = test()
+        // console.log(TestRes);
+        // let TestClsRes = TestRes()
+        // console.log(TestClsRes);
+        function calculate(x) {
+            // console.log("x before addition",x);
+
+            charges = 3
+            x = x + charges
+            // console.log("x after addition",x);
+            function multiply(y) {
+                return x * y;
+            }
+            return multiply;
+        }
+
+        const multiply3 = calculate(3);
+        console.log(multiply3(3));
+        console.log(multiply3(15));
+        const multiply4 = calculate(2);
+        console.log(multiply4(15));
+    </script>
+</body>
+
+</html>

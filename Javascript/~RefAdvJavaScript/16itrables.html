@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+
+// for (let index = 0; index < array.length; index++) {
+//   const element = array[index];
+// }
+
+      let range = {
+        from: 1,
+        to: 5,
+      };
+
+      // console.log(range);
+      // console.log(range[Symbol.iterator]);
+      // range[Symbol.iterator] = function () {
+      //   return{
+      //     current: this.from,
+      //     last: this.to,
+      //     next(){
+      //       return { done: false, value: this.current++ };
+      //     }
+      //   }
+      // }
+      // console.log(range);
+      range[Symbol.iterator] = function () {
+        return {
+          current: this.from,
+          last: this.to,
+          next() {
+            if (this.current <= this.last) {
+              return { done: false, value: this.current++ };
+            } else {
+              return { done: true };
+            }
+            console.log("called");
+          },
+        };
+      };
+      // console.log(range);
+      // console.log(range);
+      // Data = range[Symbol.iterator]()
+      // console.log(Data);
+    //   console.log(Data.next());
+    //   console.log(Data.next());
+    //   console.log(Data.next());
+    //   console.log(Data.next());
+    //   console.log(Data.next());
+    //   console.log(Data.next());
+    // //   // let iterator = str[Symbol.iterator]();
+      let str = "Hello";
+      let iterator = str[Symbol.iterator]();
+
+      console.log(iterator.next());
+      console.log(iterator.next());
+      console.log(iterator.next());
+      console.log(iterator.next());
+      console.log(iterator.next());
+      console.log(iterator.next());
+      console.log(iterator.next());
+      // while (true) {
+      //   let result = iterator.next();
+      //   console.log(result);
+      //   if (result.done) break;
+      //   // alert(result.value); // outputs characters one by one
+      // }
+
+
+    // //   for
+    //   for (let index = 0; index < 10; index++) {
+        
+    //   }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p>Constrcutor is a method which is invoked by default when objects are created</p>
+    <p>used for init value</p>
+
+    <script>
+        class Something{
+            connection = "data"
+            constructor(dbname) {
+                console.log("dbname",dbname);
+                console.log("something const",this.connection);
+                this.connection = dbname
+            }
+            
+            // databseconnection(){
+            //     console.log("something dipsData");
+            //     return " Data "
+            // }
+            insert(){
+                console.log("insert for ",this.connection);
+            }
+            update(){}
+            delete(){}
+        }
+
+        let SomethingObject = new Something("project1");
+        // console.log(SomethingObject);
+        // console.log(SomethingObject.dipsData());
+        // SomethingObject.databseconnection()
+        SomethingObject.insert()
+        
+        let SomethingObjectProject2 = new Something("project2");
+        // console.log(SomethingObject);
+        // console.log(SomethingObject.dipsData());
+        // SomethingObject.databseconnection()
+        SomethingObjectProject2.insert()
+    </script>
+
+</body>
+</html>

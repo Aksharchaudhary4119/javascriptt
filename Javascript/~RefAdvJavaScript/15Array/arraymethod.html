@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <pre>
+        const arr1 = [1, 2, 1];
+
+        <!-- const resultMap = arr1.map((num) => (num === 2 ? [2, 2] : 1)); -->
+        const resultMap = arr1.map((num) => [2, 2]));
+        console.log(resultMap);
+        const result = arr1.flatMap((num) => (num === 2 ? [2, 2] : 1));
+
+        console.log(result);
+        // Expected output: Array [1, 2, 2, 1]
+</pre>
+    <script>
+        // const arr1 = [1, 2, 1];
+
+        // const resultMap = arr1.map((num) => (num*5));
+        // console.log(resultMap);
+        // const result = arr1.flatMap((num) => (num === 2 ? [2, 2] : 1));
+        // const result = arr1.flatMap((num) => ([2, 2]));
+
+        // console.log(result);
+        // Expected output: Array [1, 2, 2, 1]
+
+        const array1 = [1, 2, 3, 4];
+
+        // 0 + 1 + 2 + 3 + 4
+        // const initialValue = 0;
+        // array1.forEach(element => {
+        //     console.log(element);
+        // });
+        // array1.map((val,key)=>{
+        //     console.log(val,key);
+        // })
+        const initialValue = 0;
+
+        array1.reduce((accumulator, currentValue) =>
+        {
+            console.log("accumulator",accumulator, "currentValue", currentValue);
+            // accumulator + currentValue
+        } ,initialValue
+        );
+
+        // console.log(sumWithInitial);
+    </script>
+
+</body>
+
+</html>

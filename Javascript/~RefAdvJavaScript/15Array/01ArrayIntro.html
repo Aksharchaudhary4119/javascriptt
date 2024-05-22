@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h2>Array</h2>
+    <p>The Array object, as with arrays in other programming languages, enables storing a collection of multiple items
+        under a single variable name, and has members for performing common array operations.</p>
+
+    <pre>
+        let MarksMaths = 90
+        let MarksEng = 95
+        let MarksSic = 98
+        let MarksComp = 90
+        let Marks = [90,95,98,90]
+    </pre>
+    <p>In JavaScript, arrays aren't primitives but are instead Array objects with the following core characteristics:
+    </p>
+    <ul>
+        <li><strong>JavaScript arrays are resizable</strong> and <strong>can contain a mix of different <a
+                    href="/en-US/docs/Web/JavaScript/Data_structures">data types</a></strong>. (When those
+            characteristics are undesirable, use <a href="/en-US/docs/Web/JavaScript/Guide/Typed_arrays">typed
+                arrays</a> instead.)</li>
+        <li><strong>JavaScript arrays are not associative arrays</strong> and so, array elements cannot be accessed
+            using arbitrary strings as indexes, but must be accessed using nonnegative integers (or their respective
+            string form) as indexes.</li>
+        <li><strong>JavaScript arrays are <a href="https://en.wikipedia.org/wiki/Zero-based_numbering" class="external"
+                    target="_blank">zero-indexed</a></strong>: the first element of an array is at index <code>0</code>,
+            the second is at index <code>1</code>, and so on — and the last element is at the value of the array's <a
+                href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/length"><code>length</code></a> property
+            minus <code>1</code>.</li>
+        <li><strong>JavaScript <a href="#copy_an_array">array-copy operations</a> create <a
+                    href="/en-US/docs/Glossary/Shallow_copy">shallow copies</a></strong>. (All standard built-in copy
+            operations with <em>any</em> JavaScript objects create shallow copies, rather than <a
+                href="/en-US/docs/Glossary/Deep_copy">deep copies</a>).</li>
+    </ul>
+    <script>
+        const fruits = [];
+        console.log(fruits.length); 
+        console.log(fruits); 
+        fruits.push("banana", "apple", "peach");
+        console.log(fruits); // 3
+        console.log(fruits.length); // 3
+        
+        
+        fruits[5] = "mango";
+        console.log(fruits[5]); // 'mango'
+        console.log(Object.keys(fruits)); // ['0', '1', '2', '5']
+        console.log(fruits.length); // 6
+        fruits.push("new");
+        console.log(fruits); // 6
+        console.log(Object.keys(fruits)); // ['0', '1', '2', '5']
+        fruits.pop();
+        console.log(fruits); // ['0', '1', '2', '5']
+    </script>
+</body>
+
+</html>

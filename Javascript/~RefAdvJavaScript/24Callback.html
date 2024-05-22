@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+    <script>
+        // function parentFunction() {
+        //     console.log("called parentFunction");
+        //     let abc = "something"
+        //     InnerFunction(abc)
+        // }
+        // function InnerFunction(data) {
+        //     // console.log("called InnerFunction");
+        //     console.log("called InnerFunction",data);
+        // }
+
+        // parentFunction()
+
+        function parentFunction(callbackFun) {
+            console.log("called before callback inside parent")
+            let abc = "something"
+            setTimeout(() => {
+                callbackFun(abc)
+            }, 2000);
+            console.log("called after callback inside parent")
+        }
+        function InnerFunction(data) {
+            console.log("called inside callback",data);
+            
+        }
+
+        parentFunction(InnerFunction)
+    </script>
+
+</body>
+</html>

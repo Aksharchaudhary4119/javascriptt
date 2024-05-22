@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="data">Test</div>
+    <div class="data">Test1</div>
+    <div class="data">Test2</div>
+    <div class="data">Test3</div>
+    <div class="data">Test4</div>
+    <script>
+
+        let Data = document.getElementsByClassName("data")
+        console.log(Data);
+        // console.log(Data[3]);
+        Object.entries(Data).forEach(element => {
+            console.log(element);
+        });
+        for (let index = 0; index < Data.length; index++) {
+            const element = Data[index];
+            console.log(element);
+        }
+
+    </script>
+</body>
+
+</html>
