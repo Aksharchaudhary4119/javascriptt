@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="" method="post">
+        <input type="text" onblur="checkvalid()" required name="username" id="username">
+        <span id="usernameError"></span>
+        <input type="submit" name="username" id="username">
+    </form>
+
+    <script>
+        function checkvalid() {
+            let inp = document.getElementById("username")
+            console.log(inp.value);
+            if (inp.value == "") {
+                document.getElementById("usernameError").innerText =" This field is required "
+                console.log("this field is req");
+            } else {
+                document.getElementById("usernameError").innerText =" "
+                console.log("done");
+
+            }
+        }
+    </script>
+
+</body>
+
+</html>

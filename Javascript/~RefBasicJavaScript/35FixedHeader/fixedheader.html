@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body id="body">
+
+    <header>
+        <div class="main-header" id="main-hedaer">
+            <div class="container">
+                <div class="row align-item-center">
+                    <div class="">
+                        <div class="logo">
+                            Logo
+                        </div>
+                    </div>
+                    <div class="ml-a txt-end">
+                        <div class="right-contact">
+                            <img src="28PSD_HTML/assets/images/VectorSmartObject.png" alt="">
+                            <span>Express delivery +78 4215 4652 </span>
+                        </div>
+                        <div class="right-menu">
+                            <nav class="navbar">
+                                <ul>
+                                    <li><a href="#">home</a></li>
+                                    <li><a href="#welcome">welcome</a></li>
+                                    <li><a href="#ourteam">our Team</a></li>
+                                    <li><a href="#about">about us</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="slider">
+        <div class="box"> Slider </div>
+    </section>
+    <section id="welcome">
+        <div class="box"> Welcome </div>
+    </section>
+    <section id="about">
+        <div class="box"> About </div>
+    </section>
+    <section id="ourteam">
+        <div class="box"> Our Team </div>
+    </section>
+    <script>
+ 
+
+        // window.onscroll = function () {
+        //     console.log("called",document.documentElement.scrollTop);
+        //     let ScrolledTop = document.documentElement.scrollTop || document.body.scrollTop;
+        // };
+
+        window.addEventListener("scroll", function (event) {
+            // const bodyRect = document.body.getBoundingClientRect().top;
+            // console.log(event);
+            // console.log(window.pageYOffset);
+            // console.log(this);
+            console.log(this.scrollY);
+            if (this.scrollY > 500) {
+                document.getElementById("main-hedaer").classList.add("fixed")
+            } else {
+                document.getElementById("main-hedaer").classList.remove("fixed")
+            }
+        })
+        // document.addEventListener("scroll",(event)=> {
+        //     console.log(event);
+        // })
+        //   $(function() {
+        //   $(window).on("scroll", function() {
+        //     var scroll = $(window).scrollTop();
+
+        //     if (scroll >= 80) {
+        //       $("#site-header").addClass("nav-fixed");
+        //     } else {
+        //       $("#site-header").removeClass("nav-fixed");
+        //     }
+        //   });
+        // })
+        // $('.scroll').on('click', function (e) {
+        //     e.preventDefault();
+        //     var offset = 0;
+        //     var target = this.hash;
+        //     if ($(this).data('offset') != undefined) offset = $(this).data('offset');
+        //     $('html, body').stop().animate({
+        //         'scrollTop': $(target).offset().top - offset
+        //     }, 500, 'swing', function () {
+        //         // window.location.hash = target;
+        //     });
+        // });
+    </script>
+
+</body>
+
+</html>

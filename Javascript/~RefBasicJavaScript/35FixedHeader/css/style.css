@@ -1,0 +1,216 @@
+/* COMMON CSS START */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+.container {
+    width: 100%;
+    /* background-color: brown; */
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+div[class*="col"] {
+    padding-left: 15px;
+    padding-right:15px;
+}
+.col {
+    flex: 1 0 0%;
+}
+
+.col-25,.col-50,.col-33 {
+    width: 100%;
+}
+.align-item-center{
+    align-items: center;
+}
+
+@media (min-width: 576px) {
+    .container {
+        width: 540px;
+    }
+    .col-25,.col-50,.col-33 {
+        width: 100%;
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        width: 720px;
+    }
+    .col-25 {
+        width: 50%;
+    }
+    .col-50{
+        width: 100%;
+    }
+    .col-33{
+        width: 50%;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        width: 960px;
+    }
+    .col-25 {
+        width: 33.33%;
+    }
+    .col-50{
+        width: 50%;
+    }
+    .col-33{
+        width: 33.33%;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 1300px;
+    }
+    .col-25 {
+        width: 25%;
+    }
+    .col-50{
+        width: 50%;
+    }
+    .col-33{
+        width: 33.33%;
+    }
+}
+
+/* .container {
+    max-width: 1300px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+} */
+
+.container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row {
+    display: flex;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+div[class*="col"] {
+    padding: 0 15px;
+}
+
+.col {
+    flex: 1 0 0%;
+}
+
+.col-40 {
+    width: 40%;
+    /* flex: 1 0 0%; */
+}
+
+.col-60 {
+    /* flex: 1 0 0%; */
+    width: 60%;
+
+}
+
+.ml-a {
+    margin-left: auto;
+}
+
+.my-3 {
+    margin: 3em 0;
+}
+
+.mx-3 {
+    margin: 0 3em;
+}
+
+.navbar ul li {
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+}
+
+.txt-end {
+    text-align: end;
+}
+
+.txt-center {
+    text-align: center;
+}
+
+.posi-rele {
+    position: relative;
+}
+
+.posi-ab {
+    position: absolute;
+}
+
+.z-index-0 {
+    z-index: 0;
+}
+
+.z-index-1 {
+    z-index: 0;
+}
+
+.py-5 {
+    padding: 3em 0;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.overflow-hid {
+    overflow: hidden;
+}
+
+.align-self-end {
+    align-self: flex-end;
+}
+
+
+.main-header{
+    padding: 10px 0;
+    background-color: rgba(148, 145, 0, 0.767);
+}
+.fixed{
+    position: fixed;
+    width: 100%;
+    animation: animateheader 2s ;
+}
+/* @keyframes animateheader {
+    to{}
+    from{}
+} */
+#ourteam,#about,#welcome,#slider{
+    min-height: 400px;
+}
+#slider{ background-color:teal ;}
+#welcome{ background-color:purple ;}
+#about{ background-color: orangered;}
+#ourteam{ background-color:yellowgreen ;}

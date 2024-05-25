@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <button id="btnclick">Click</button>
+    <div id="disp">this is the example</div>
+
+    <script>
+        document.getElementById("btnclick").addEventListener("click", function () {
+            // console.log("Called");
+            // document.getElementById("disp").innerHTML ='<input type="text" name="" id="">'; 
+            var element = document.createElement('input');
+            element.type = 'text';
+            element.value = 'data';
+            element.id = '';
+            
+            // console.log(element);
+            // console.log(element.__proto__);
+            console.log(document.getElementById("disp").__proto__);
+
+            document.getElementById("disp").appendChild(element)
+            // document.getElementById("disp").innerHTML =element; 
+
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="number" name="val" value="1500" id="val">
+    <select name="quant" id="quant">
+        <!-- <option value="1">1</option> -->
+    </select>
+
+    
+    <div class="disp" id="disp">
+
+    </div>
+
+    <script>
+
+        let something = "Testing"
+        // document.getElementById("disp").innerText = "checking"
+        // document.getElementById("disp").innerText = something
+        // document.getElementById("disp").innerText = "<b>checking</b>"
+        // document.getElementById("disp").innerHTML = "<b>checking</b>"
+        // document.getElementById("disp").innerText
+        let HTMLData ="" 
+        // for (let index = 0; index < 10; index++) {
+        //     //    " <option value="1">1</option> "            
+        //     HTMLData +="<li> abcd "+index+" </li>"
+        // }
+        for (let index = 0; index < 10; index++) {
+            //    " <option value="1">1</option> "            
+            // HTMLData +="<option value="1">1</option>"
+            // HTMLData +="<option value='1'>1</option>"
+            // HTMLData +='<option value="1">'+index+'</option>'
+            HTMLData +='<option value="'+index+'">'+index+'</option>'
+        }
+        
+        // document.getElementById("disp").innerHTML = HTMLData
+        document.getElementById("quant").innerHTML = HTMLData
+        console.log(HTMLData);
+        document.getElementById("quant").addEventListener("change",function () {
+            // console.log("something");
+            // console.log(this);
+            let inpValue = document.getElementById("val").value 
+            console.log("inpValue : ",inpValue);
+            console.log("Quantity : ",this.value);
+            // let Amount = parseInt this.value
+            let Amount = this.value*inpValue
+            console.log(Amount);
+            document.getElementById("disp").innerHTML = " Total Amount is <b> "+ Amount +" </b>"
+        })
+    </script>
+</body>
+
+</html>

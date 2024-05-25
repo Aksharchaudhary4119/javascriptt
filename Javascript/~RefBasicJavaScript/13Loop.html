@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // for("init","condition","progress")
+        //  for (let index = 0; index <= 10; index++) {
+        //     console.log("called",index);
+        //  }
+        
+        
+        data = [10,"test",true,'A',45.32]
+        Marks = [90,95,92,99]
+        MarksWithSub = {  "Maths":90,"Eng":95,"Guj":92,"Comp":99}
+
+        console.log(Marks);
+        console.log(MarksWithSub);
+        console.log(MarksWithSub.length);
+        // console.log(data[0]);
+            for (let index = 0; index < data.length; index++) {
+                console.log(data[index]);
+            }
+        // console.log(data);
+        data.forEach((element,i)=> {
+            console.log("key is : ",i,"value is ",element);
+        });
+
+        whiledata = 15
+
+        while (whiledata < 10) {
+            console.log("while",whiledata );
+            whiledata++ 
+        }
+        dowhile = 15
+        do {
+            console.log("do..while",dowhile);
+            dowhile++ 
+        } while (dowhile<10);
+    </script>
+
+</body>
+</html>
