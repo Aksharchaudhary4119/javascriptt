@@ -1,0 +1,12 @@
+/* #root>p{
+  color: yellow;
+} */
+
+/* #root p{
+  color: yellow;
+} */
+
+
+#root>div>p{
+  color: yellow;
+}
