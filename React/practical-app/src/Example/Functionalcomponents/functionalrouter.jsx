@@ -2,7 +2,6 @@ import { createBrowserRouter } from "react-router-dom";
 import HeaderCom from "./Component/HeaderFile";
 import TutorialCompo from "./Pages/TutorialComponent.jsx";
 import ExampleCompo from "./Pages/ExampleCompo.jsx";
-import ClassCompoRoute from "./Example/Classcomponents/classrouter.jsx";
 
 const router = createBrowserRouter([
   {
@@ -52,11 +51,11 @@ const router = createBrowserRouter([
       },
       {
         path: "classCompo",
-        element: <ClassCompoRoute />,
+        element: <ClassCompo />,
       },
       {
         path: "functionalCompo",
-        element: <TutorialCompo />,
+        element: <FunctionalCompo />,
       },
     ],
   },

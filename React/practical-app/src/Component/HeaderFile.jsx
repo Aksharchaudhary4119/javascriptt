@@ -15,6 +15,7 @@ import {
   MDBDropdownItem,
   MDBCollapse,
 } from "mdb-react-ui-kit";
+import { Link } from "react-router-dom";
 
 export default function App() {
   const [openBasic, setOpenBasic] = useState(false);
@@ -22,7 +23,7 @@ export default function App() {
   return (
     <MDBNavbar expand="lg" light bgColor="light">
       <MDBContainer fluid>
-        <MDBNavbarBrand href="#">Brand</MDBNavbarBrand>
+        <MDBNavbarBrand href="/">Brand</MDBNavbarBrand>
 
         <MDBNavbarToggler
           aria-controls="navbarSupportedContent"
@@ -37,23 +38,36 @@ export default function App() {
           <div className="d-flex">
             <MDBNavbarNav className="mr-auto mb-2 mb-lg-0">
               <MDBNavbarItem>
-                <MDBNavbarLink active aria-current="page" href="#">
+                <MDBNavbarLink active aria-current="page" href="/home">
                   Home
                 </MDBNavbarLink>
               </MDBNavbarItem>
+              {/* <MDBNavbarItem>
+                <MDBNavbarLink href="#">About</MDBNavbarLink>
+              </MDBNavbarItem> */}
               <MDBNavbarItem>
-                <MDBNavbarLink href="#">Link</MDBNavbarLink>
+                <Link className="nav-link" to="/about">
+                  About
+                </Link>
+              </MDBNavbarItem>
+              <MDBNavbarItem>
+                <Link className="nav-link" to="/contact">
+                  Contact us
+                </Link>
               </MDBNavbarItem>
 
               <MDBNavbarItem>
                 <MDBDropdown>
                   <MDBDropdownToggle tag="a" className="nav-link" role="button">
-                    Dropdown
+                    Examples
                   </MDBDropdownToggle>
                   <MDBDropdownMenu>
-                    <MDBDropdownItem link>Action</MDBDropdownItem>
-                    <MDBDropdownItem link>Another action</MDBDropdownItem>
-                    <MDBDropdownItem link>Something else here</MDBDropdownItem>
+                    <MDBDropdownItem link>Basic Examples</MDBDropdownItem>
+                    <MDBDropdownItem link>Addvance</MDBDropdownItem>
+                    {/* <MDBDropdownItem link>Something else here</MDBDropdownItem> */}
+                    <Link className="dropdown-item" to="/examples/tutorial">
+                      Tutorial
+                    </Link>
                   </MDBDropdownMenu>
                 </MDBDropdown>
               </MDBNavbarItem>

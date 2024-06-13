@@ -1,13 +1,14 @@
-import React from 'react';
-import CardCompo from './CardCompo.jsx';
-import carcompo from './car_compo.jpg';
-import cars from './../cars.jpeg';
+import React from "react";
+import CardCompo from "./CardCompo.jsx";
+import carcompo from "./car_compo.jpg";
+import cars from "./../cars.jpeg";
 
-const Products = () => {
-    return (
-        <>
-            <div className="container mt-5">
-                {/* <div className="row">
+// const Products = () => {
+//     return (
+//         <>
+//             <div className="container mt-5">
+{
+  /* <div className="row">
                     <div className="col-lg-3">
                         <div class="card">
                             <img class="card-img-top" src={carcompo} alt="Card image cap"/>
@@ -47,11 +48,14 @@ const Products = () => {
                     {/* <div className="col-lg-3"> <CardCompo/></div>
                 <div className="col-lg-3"> <CardCompo/></div>
                 <div className="col-lg-3"> <CardCompo/></div>
-                <div className="col-lg-3"> <CardCompo/></div> */}
-                </div> */}
-            </div>
-        </>
-    );
-};
+                <div className="col-lg-3"> <CardCompo/></div> */
+}
+{
+  /* </div> */
+}
+//             </div>
+//         </>
+//     );
+// }; */}
 
 export default Products;
