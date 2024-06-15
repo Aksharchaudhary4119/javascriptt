@@ -65,7 +65,7 @@ export default function App() {
                     <MDBDropdownItem link>Basic Examples</MDBDropdownItem>
                     <MDBDropdownItem link>Addvance</MDBDropdownItem>
                     {/* <MDBDropdownItem link>Something else here</MDBDropdownItem> */}
-                    <Link className="dropdown-item" to="/examples/tutorial">
+                    <Link className="dropdown-item" to="/examples">
                       Tutorial
                     </Link>
                   </MDBDropdownMenu>

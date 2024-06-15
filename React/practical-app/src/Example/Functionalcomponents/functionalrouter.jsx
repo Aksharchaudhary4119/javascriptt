@@ -51,11 +51,11 @@ const router = createBrowserRouter([
       },
       {
         path: "classCompo",
-        element: <ClassCompo />,
+        element: <TutorialCompo />,
       },
       {
         path: "functionalCompo",
-        element: <FunctionalCompo />,
+        element: <TutorialCompo />,
       },
     ],
   },

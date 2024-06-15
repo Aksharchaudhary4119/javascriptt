@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import React from "react";
+import { Link, Outlet } from "react-router-dom";
 
 const TutorialComponent = () => {
   return (
@@ -19,6 +19,7 @@ const TutorialComponent = () => {
             </h3>
             {/* <h3>Functional Component</h3> */}
           </div>
+          <Outlet></Outlet>
         </div>
       </div>
     </>
