@@ -1,6 +1,10 @@
 import { Link, createBrowserRouter, useRoutes } from "react-router-dom";
 import ClassCompoMenu from "./ClassCompoMenu.jsx";
 import ComponentInReact from "./ComponentInReact.jsx";
+import ReactClassState from "./ReactClassState.jsx";
+import ReactClassProps from "./ReactClassProps.jsx";
+import ReactClassContructor from "./ReactClassConstructor.jsx";
+import ReactClassLifeCycle from "./ReactClassLifeCycle.jsx";
 
 // const classrouter = createBrowserRouter([
 //   {
@@ -23,6 +27,22 @@ const ClassComponentRoute = () => {
         {
           path: "classcompointro",
           element: <ComponentInReact />,
+          },
+          {
+          path: "classcompostate",
+          element: <ReactClassState />,
+          
+          },{
+          path: "classcompoprops",
+          element: <ReactClassProps />,
+          
+          },{
+          path: "classcompoconstructor",
+          element: <ReactClassContructor />,
+          },{
+          path: "classcompolifecycle",
+          element: <ReactClassLifeCycle />,
+    
         },
       ],
     },
