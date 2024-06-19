@@ -4,7 +4,7 @@ class ReactClassConstructor extends Component {
     constructor(props) {
         // super(props); Must call super constructor in derived class before accessing 'this' or returning from derived constructor
         super(props);
-        console.log("constuctor called");
+        console.log("constructor called");
         this.state = {color: "yellow"};
         }
         

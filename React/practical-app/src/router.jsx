@@ -4,12 +4,11 @@ import TutorialCompo from "./Pages/TutorialComponent.jsx";
 import ExampleCompo from "./Pages/ExampleCompo.jsx";
 import { Suspense, lazy } from "react";
 // import ClassCompoRoute from "./Example/Classcomponents/classrouter.jsx";
-const ClassCompo = lazy(() => {
-  return import("./Example/Classcomponents/classrouter.jsx");
-});
+const ClassCompo = lazy(() => {return import("./Example/Classcomponents/classrouter.jsx")});
+const FunctionalCompo = lazy(() => {return import("./Example/Functionalcomponents/functionalrouter.jsx")});
 
 const router = createBrowserRouter([
-  {
+  { 
     path: "/home",
     element: (
       <div>
@@ -40,14 +39,6 @@ const router = createBrowserRouter([
   },
   {
     path: "/examples",
-    // element:
-    //   <>
-    //     <HeaderCom />
-    //     <div>
-    //       <h2>data</h2>
-    //       <Outlet />
-    //     </div>
-    //   </>
     element: <ExampleCompo />,
     children: [
       {
@@ -59,9 +50,9 @@ const router = createBrowserRouter([
         ),
       },
       {
-        path: "functionalCompo",
-        element: <TutorialCompo />,
-      },
+        path: "/examples/functionalcomponent/*",
+        element: <Suspense fallback={<>Loading...</>} ><FunctionalCompo /></Suspense>,
+    },
     ],
   },
 ]);

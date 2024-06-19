@@ -1,64 +1,30 @@
-import { createBrowserRouter } from "react-router-dom";
-import HeaderCom from "./Component/HeaderFile";
-import TutorialCompo from "./Pages/TutorialComponent.jsx";
-import ExampleCompo from "./Pages/ExampleCompo.jsx";
+import { createBrowserRouter, useRoutes } from "react-router-dom";
+import FunctionalCompoMenu from "./01FunctionalCompoMenu.jsx"
+import FunctionalCompoIntro from "./02FunctionalCompoIntro.jsx"
+import FunctionalCompoState from "./03FunctionalCompoState.jsx"
+import FunctionalCompoProps from "./04FunctionalCompoProps.jsx"
 
-const router = createBrowserRouter([
-  {
-    path: "/home",
-    element: (
-      <div>
-        <HeaderCom />
-        <h1>Hello World</h1>
-      </div>
-    ),
-  },
-  {
-    path: "/about",
 
-    element: (
-      <div>
-        <HeaderCom /> <h2> About</h2>
-      </div>
-    ),
-  },
-  {
-    path: "/contact",
-    element: (
-      <>
-        <HeaderCom />
-        <div>
-          <h2>Contact us</h2>
-        </div>
-      </>
-    ),
-  },
-  {
-    path: "/examples",
-    // element:
-    //   <>
-    //     <HeaderCom />
-    //     <div>
-    //       <h2>data</h2>
-    //       <Outlet />
-    //     </div>
-    //   </>
-    element: <ExampleCompo />,
-    children: [
-      {
-        path: "tutorial",
-        element: <TutorialCompo />,
-      },
-      {
-        path: "classCompo",
-        element: <TutorialCompo />,
-      },
-      {
-        path: "functionalCompo",
-        element: <TutorialCompo />,
-      },
-    ],
-  },
-]);
+const FunctionalComponentRoute = () => {
+  const routes = useRoutes([
+    {
+      path: "/",
+      element: <FunctionalCompoMenu />,
+      children: [
+        {
+          path: "functionalComponentintro",
+          element: <FunctionalCompoIntro />,
+        },{
+          path: "functionalComponentstate",
+          element: <FunctionalCompoState />,
+        },{
+          path: "functionalComponentprops",
+          element: <FunctionalCompoProps />,
+        }
+      ],
+    },
+  ])
+  return routes;
+};
 
-export default router;
+export default FunctionalComponentRoute;
