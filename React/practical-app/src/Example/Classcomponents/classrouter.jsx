@@ -19,7 +19,6 @@ import ReactClassLifeCycle from "./ReactClassLifeCycle.jsx"
 
 
 const ClassComponentRoute = () => {
-    // http://localhost:3000/examples/classcomponent/classcompointro
     const routes = useRoutes([
         {
             path: "/",

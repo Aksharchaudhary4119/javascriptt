@@ -10,12 +10,13 @@ const FunctionalCompoMenu = () => {
                         <li><Link to="functionalcomponentintro">Introduction</Link></li>
                         <li><Link to="functionalcomponentstate">State</Link></li>
                         <li><Link to="functionalcomponentprops">Props</Link></li>
+                        <li><Link to="functionalcomponentUseContext">UseContext</Link></li>
                     </ol>
                 </div>
                 <div className='row my-3'>
                     <div className='col'>
                     <Outlet />
-                    </div>
+                    </div>–
                 </div>
             </div>
         </>
