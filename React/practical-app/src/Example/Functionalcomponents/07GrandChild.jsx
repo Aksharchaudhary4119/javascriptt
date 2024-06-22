@@ -1,13 +1,12 @@
 import React, { createContext, useContext } from 'react';
-// import UseContextComp from './05UseContext.jsx';
-// const UserContext = createContext ();
-const Context = createContext ();
+import {Context} from './05UseContext';
 
 
 const GrandChild = (props) => {
-    const user = useContext(Context);
+    const context = useContext(Context);
     return <div> testing{useContext}</div>
     
+    // const user = useContext(Context);
     // return (
     //     <>
     //         <p>Grand Child component : {props.DataFromParent}</p>

@@ -4,6 +4,7 @@ import FunctionalCompoIntro from "./02FunctionalCompoIntro.jsx"
 import FunctionalCompoState from "./03FunctionalCompoState.jsx"
 import FunctionalCompoProps from "./04FunctionalCompoProps.jsx"
 import FunctionalCompoUseContext from "./05UseContext.jsx"
+import ThemeChange from "./UseContextHooks/ThemeChangeDarkLight/01mainFile.jsx"
 
 
 const FunctionalComponentRoute = () => {
@@ -24,7 +25,10 @@ const FunctionalComponentRoute = () => {
         },{
           path: "functionalComponentUseContext",
           element: <FunctionalCompoUseContext />,
-        }
+        },{
+          path: "functionalcomponentusecontext/usecontextchangetheme",
+          element: <ThemeChange />,
+      }
         ],
     },
   ])
