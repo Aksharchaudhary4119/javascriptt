@@ -11,12 +11,19 @@ const FunctionalCompoMenu = () => {
                         <li><Link to="functionalcomponentstate">State</Link></li>
                         <li><Link to="functionalcomponentprops">Props</Link></li>
                         <li><Link to="functionalcomponentUseContext">UseContext</Link></li>
-                    </ol>
+                        <li><Link to="functionalcontrolledcompo">Controlled Component</Link></li>
+                        <li><Link to="functionaluncontrolledcompo">UnControlled Component</Link></li>
+                        <li><Link to="functionalcomponentuseref">UseRef</Link></li>
+                        <li><Link to="functionalcomponentresspread">Rest Vs Spread</Link></li>
+                        <li><Link to="hooks">ReactJSHooks</Link></li>
+                        <li><Link to="useeffect">useEffect</Link></li>
+
+                    </ol>                           
                 </div>
                 <div className='row my-3'>
                     <div className='col'>
                     <Outlet />
-                    </div>–
+                    </div>
                 </div>
             </div>
         </>

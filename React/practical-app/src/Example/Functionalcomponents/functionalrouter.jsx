@@ -5,6 +5,12 @@ import FunctionalCompoState from "./03FunctionalCompoState.jsx"
 import FunctionalCompoProps from "./04FunctionalCompoProps.jsx"
 import FunctionalCompoUseContext from "./05UseContext.jsx"
 import ThemeChange from "./UseContextHooks/ThemeChangeDarkLight/01mainFile.jsx"
+import FunctionalControlledCompo from "./08FunctionalControlledCompo.jsx"
+import FunctionalUnControlledCompo from "./09FunctionalUnControlledCompo.jsx"
+import FunctionalCompoUseRef from "./10UseRefEffectHooksInFunctionalCompo.jsx"
+import FunctionalCompoRestSpread from "./11FunctionalCompoRestSpread.jsx"
+import HooksTheory from "./12HooksInFunctionalCompo.jsx"
+import UseEffectHook from "./13UseEffectHook.jsx"
 
 
 const FunctionalComponentRoute = () => {
@@ -28,7 +34,25 @@ const FunctionalComponentRoute = () => {
         },{
           path: "functionalcomponentusecontext/usecontextchangetheme",
           element: <ThemeChange />,
-      }
+      },{
+        path:"functionalcontrolledcompo",
+        element:<FunctionalControlledCompo/>
+      },{
+        path:"functionaluncontrolledcompo",
+        element:<FunctionalUnControlledCompo/>
+      },{
+        path: "functionalcomponentuseref",
+        element: <FunctionalCompoUseRef />,
+    },{
+      path: "functionalcomponentresspread",
+      element: <FunctionalCompoRestSpread />,
+      },{
+        path: "hooks",
+        element: <HooksTheory />,
+      },{
+      path: "useeffect",
+      element: <UseEffectHook />,
+    },
         ],
     },
   ])
