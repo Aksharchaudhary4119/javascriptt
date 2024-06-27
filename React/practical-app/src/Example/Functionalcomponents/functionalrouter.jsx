@@ -11,6 +11,9 @@ import FunctionalCompoUseRef from "./10UseRefEffectHooksInFunctionalCompo.jsx"
 import FunctionalCompoRestSpread from "./11FunctionalCompoRestSpread.jsx"
 import HooksTheory from "./12HooksInFunctionalCompo.jsx"
 import UseEffectHook from "./13UseEffectHook.jsx"
+import UseLayoutEffectHook from "./14UseLayoutEffectHook.jsx"
+import UseCallBackHook from "./16UseCallbackHook.jsx"
+import UseMemoHooks from "./17UseMemoHooks.jsx"
 
 
 const FunctionalComponentRoute = () => {
@@ -52,7 +55,16 @@ const FunctionalComponentRoute = () => {
       },{
       path: "useeffect",
       element: <UseEffectHook />,
-    },
+      },{
+      path: "uselayouteffect",
+      element: <UseLayoutEffectHook />,
+    },{
+      path:"usecallback",
+      element:<UseCallBackHook />
+    },{
+      path:"usememohooks",
+      element:<UseMemoHooks />
+    }
         ],
     },
   ])

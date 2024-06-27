@@ -17,6 +17,9 @@ const FunctionalCompoMenu = () => {
                         <li><Link to="functionalcomponentresspread">Rest Vs Spread</Link></li>
                         <li><Link to="hooks">ReactJSHooks</Link></li>
                         <li><Link to="useeffect">useEffect</Link></li>
+                        <li><Link to="uselayouteffect">useLayoutEffect</Link></li>
+                        <li><Link to="uselayouteffect">useCallback</Link></li>
+                        <li><Link to="usememohooks">UseMemoHooks</Link></li>
 
                     </ol>                           
                 </div>

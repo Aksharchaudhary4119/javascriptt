@@ -1,0 +1,31 @@
+html {
+    font-size: 5vh;
+}
+
+@media screen and (min-height:400px) {
+    html{
+        font-size: 19px;
+    }
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #2252a4;
+}
+
+@keyframes swimming{
+    0% , 100% {
+        transform:translateX(0)
+        }
+        22.5%{
+            transform: translate(2.5rem) skew(-5deg);
+        }
+        45%{
+            transform: translate(2.5rem) translateY(-1rem) skew(-5deg);
+        }
+}
+
+
