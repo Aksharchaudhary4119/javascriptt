@@ -39,7 +39,7 @@ const UseMemoHooks = () => {
 // const to square the value
 const squareNum = (number) => {
     console.log("Squaring will be done!");
-    return Math.pow(number, 2);
+    return Math.pow(number, 5);
 }
 
 export default UseMemoHooks;
