@@ -20,6 +20,7 @@ const FunctionalCompoMenu = () => {
                         <li><Link to="uselayouteffect">useLayoutEffect</Link></li>
                         <li><Link to="uselayouteffect">useCallback</Link></li>
                         <li><Link to="usememohooks">UseMemoHooks</Link></li>
+                        <li><Link to="statelifting">StateLifting</Link> </li>
 
                     </ol>                           
                 </div>

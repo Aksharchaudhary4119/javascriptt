@@ -137,7 +137,7 @@ body {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: calc(1% * var(--filling, 90));
+  height: calc(1% * var(--filling, 50));
   background: linear-gradient(transparent -50%, #419197 250%);
   border-radius: 20% 20% 4rem 4rem;
   transition: height 0.5s linear;

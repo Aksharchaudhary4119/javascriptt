@@ -13,7 +13,9 @@ import HooksTheory from "./12HooksInFunctionalCompo.jsx"
 import UseEffectHook from "./13UseEffectHook.jsx"
 import UseLayoutEffectHook from "./14UseLayoutEffectHook.jsx"
 import UseCallBackHook from "./16UseCallbackHook.jsx"
-import UseMemoHooks from "./17UseMemoHooks.jsx"
+import UseMemoHooks from "./17UseMemoHooks.jsx"  
+import StateLifting from "./18StateLifting.jsx"
+
 
 
 const FunctionalComponentRoute = () => {
@@ -64,7 +66,10 @@ const FunctionalComponentRoute = () => {
     },{
       path:"usememohooks",
       element:<UseMemoHooks />
-    }
+    },{
+      path: "statelifting",
+      element: <StateLifting />,
+  }
         ],
     },
   ])
