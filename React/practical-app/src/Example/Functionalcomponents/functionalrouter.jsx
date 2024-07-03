@@ -15,7 +15,7 @@ import UseLayoutEffectHook from "./14UseLayoutEffectHook.jsx"
 import UseCallBackHook from "./16UseCallbackHook.jsx"
 import UseMemoHooks from "./17UseMemoHooks.jsx"  
 import StateLifting from "./18StateLifting.jsx"
-import UseReducerHookInFunctionalCompo from './20UseReducerHookInFunctionalCompo.jsx';
+import UseReducerHook from './20UseReducerHook.jsx';
 
 
 
@@ -72,8 +72,8 @@ const FunctionalComponentRoute = () => {
       path: "statelifting",
       element: <StateLifting />,
   },{
-      path: "usereducerhookinfunctionalcompo",
-      element: <UseReducerHookInFunctionalCompo />,
+      path: "usereducerhook",
+      element: <UseReducerHook />,
   }
     ],
     },

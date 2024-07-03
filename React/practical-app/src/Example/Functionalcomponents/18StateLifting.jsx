@@ -14,6 +14,13 @@ const StateLiftingInFunctionalCompo = () => {
             <p>Parent State : {statedata}</p>
             {/* <button>Click Parent</button> */}
             <ChildComponent title="testing" func={parentFunc} />  {statedata}
+
+<br />
+
+<br />
+            <p>
+            In React, sharing state is accomplished by moving it up to the closest common ancestor of the components that need it. This is called “lifting state up”.
+            </p>
         </>
     );
 };

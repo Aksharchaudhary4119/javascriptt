@@ -63,7 +63,12 @@ const UseCallbackHookInFunctionalCompo = () => {
             <button onClick={incrementCounter}>Increase counter</button>
             <button onClick={decrementCounter}>Decrease Counter</button>
             <button onClick={incrementNumber}>increase number</button>
-            <p className='my-5' >Count : {count} , number {number}</p>    
+            <p className='my-5' >Count : {count} , number {number}</p>   
+
+            <br />
+            <p>
+                
+The useCallback hook is a built-in hook in React that lets you memoize a callback function by preventing it from being recreated on every render. In simple terms, it means that the callback function is cached and does not get redefined on every render.</p> 
         </>
     );
 };

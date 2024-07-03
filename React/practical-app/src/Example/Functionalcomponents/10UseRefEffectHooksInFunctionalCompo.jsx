@@ -35,6 +35,10 @@ const UseRefEffectHooksInFunctionalCompo = () => {
                 anything(event.target.value)
              }}/>
            {data}
+
+           <p>
+           useRef is a React Hook that lets you reference a value that's not needed for rendering. const ref = useRef(initialValue) useRef(initialValue)
+           </p>
         </>
     );
 };

@@ -18,6 +18,10 @@ const FunctionalUnControlledCompo = () => {
                 ref={inputRef}
             />
             <button type='submit'>Submit</button>
+
+            <p>
+            An uncontrolled component stores the current value of the form data using react ref. Uncontrolled component react are helpful when we need to integrate react with other libraries which do not follow react design patterns.
+            </p>
            </form>
         </>
     );

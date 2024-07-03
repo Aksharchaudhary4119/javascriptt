@@ -38,6 +38,9 @@ const HooksInFunctionalCompo = () => {
                     </ul>
                 </li>
             </ul>
+            <p>
+            React Hooks are functions that let you use state and other React features in functional components without writing a class component. Hooks were introduced in React version 16.8 as a way to simplify state management and reduce code duplication in React applications.
+            </p>
         </>
     );
 };

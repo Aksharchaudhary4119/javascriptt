@@ -38,6 +38,10 @@ const UseContextCustomHook = () => {
         <li>Notication</li>
         <li>Books data <a href="https://www.robinwieruch.de/react-usecontext-hook/">Ref</a></li>
     </ol>
+
+    <p>
+    The useContext Hook provides function components access to the context value for a context object. It: Takes the context object (i.e., value returned from React. createContext ) as the one argument it accepts. And returns the current context value as given by the nearest context provider.
+    </p>
     <Link to="usecontextchangetheme">Our Example</Link>
     <Context.Provider value ={{ Data:"Something" }}>
       <Child />

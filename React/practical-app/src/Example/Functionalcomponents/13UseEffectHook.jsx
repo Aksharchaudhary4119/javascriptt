@@ -57,6 +57,10 @@ const UseEffectHook = () => {
              <h3>Effects with Cleanup</h3>
             <p>Effects with Cleanup will be called where we leave that component</p>
             <p>Effects with Cleanup will helps to remove data from memory like we set some data by fetching API while calling useEffect and wants to remove that data from the states whlie we leave that component that time we can use cleanup</p>
+            <br />
+            <p>
+            The useEffect Hook allows you to perform side effects in your components. Some examples of side effects are: fetching data, directly updating the DOM, and timers. useEffect accepts two arguments. The second argument is optional.
+            </p>
         </>
     );
 };

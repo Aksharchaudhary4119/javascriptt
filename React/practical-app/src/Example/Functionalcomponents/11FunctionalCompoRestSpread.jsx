@@ -50,7 +50,11 @@ const FunctionalCompoRestSpread = () => {
             // The invocation above will return:
             ["CodeSweetly", "Web Developer", "Male"]
         
-
+        <br />
+        <br />
+        <p>
+        While the rest operator gathers all remaining elements or arguments into an array. In summary, this means that the rest operator is used to gather elements into an array, while the spread operator is used to spread the content of an array
+        </p>
 
 
         </>

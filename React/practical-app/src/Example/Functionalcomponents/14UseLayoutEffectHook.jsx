@@ -48,6 +48,11 @@ const UseEffectHooksInFunctionalCompo = () => {
             {/* <button onClick={() => { anything(secondState + 1) }}>Increment Other State Data {secondState}</button> */}
             <button onClick={() => { setRefreshStatus(!refreshStatus) }}>Refresh {JSON.stringify(refreshStatus)}</button>
 
+            <br />
+            <p>
+            The purpose of useLayoutEffect is to let your component use layout information for rendering: Render the initial content. Measure the layout before the browser repaints the screen. Render the final content using the layout information you've read.
+            </p>
+
         </>
     );
 };
