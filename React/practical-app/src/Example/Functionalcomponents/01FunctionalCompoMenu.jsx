@@ -18,10 +18,11 @@ const FunctionalCompoMenu = () => {
                         <li><Link to="hooks">ReactJSHooks</Link></li>
                         <li><Link to="useeffect">useEffect</Link></li>
                         <li><Link to="uselayouteffect">useLayoutEffect</Link></li>
-                        <li><Link to="uselayouteffect">useCallback</Link></li>
+                        <li><Link to="usecallback">useCallback</Link></li>
                         <li><Link to="usememohooks">UseMemoHooks</Link></li>
                         <li><Link to="statelifting">StateLifting</Link> </li>
                         <li><Link to="usereducerhook">UseReducerHook</Link> </li>
+                        <li><Link to="useimperativehandle">useImperativeHandle</Link> </li>
 
                     </ol>                           
                 </div>

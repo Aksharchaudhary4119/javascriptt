@@ -39,6 +39,9 @@ const UseRefEffectHooksInFunctionalCompo = () => {
            <p>
            useRef is a React Hook that lets you reference a value that's not needed for rendering. const ref = useRef(initialValue) useRef(initialValue)
            </p>
+           
+           <p>useEffect accepts two arguments. The second argument is optional.</p>
+
         </>
     );
 };

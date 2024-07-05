@@ -29,6 +29,11 @@ const UseReducerHookInFunctionalCompo = () => {
         <button className='btn btn-danger fs-5 mx-3' onClick={() => { dispatch({ type: "DECREMENT" }); }} > - </button>
 
         </div>
+
+        <p>
+            The useReducer Hook is used to store and update states, just like the useState Hook. It accepts a reducer function as its first parameter and the initial state as the second. useReducer returns an array that holds the current state value and a dispatch function to which you can pass an action and later invoke it.</p>
+            <p>[[UseReducer hūkanō upayōga sṭēṭa hūkanī jēma ja sṭēṭsanē sṭōra karavā anē apaḍēṭa karavā māṭē thāya chē. Tē tēnā prathama parimāṇa tarīkē rīḍyusara phaṅkśana anē bījā tarīkē prārambhika sthiti svīkārē chē. UseReducer ē ērē āpē chē jē vartamāna sthiti mūlya dharāvē chē anē ēka ḍispēca phaṅkśana kē jēmāṁ tamē kriyā pasāra karī śakō chō anē pachīthī tēnē bōlāvī śakō chō.]]
+            </p>
              
         </>
     );

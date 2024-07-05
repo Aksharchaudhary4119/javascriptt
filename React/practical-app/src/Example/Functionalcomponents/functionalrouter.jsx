@@ -16,6 +16,7 @@ import UseCallBackHook from "./16UseCallbackHook.jsx"
 import UseMemoHooks from "./17UseMemoHooks.jsx"  
 import StateLifting from "./18StateLifting.jsx"
 import UseReducerHook from './20UseReducerHook.jsx';
+import UseImperativeHandleHook from "./21UseImperativeHandleHook/01main.jsx"
 
 
 
@@ -74,7 +75,10 @@ const FunctionalComponentRoute = () => {
   },{
       path: "usereducerhook",
       element: <UseReducerHook />,
-  }
+  },{
+    path: "useimperativehandle",
+    element: <UseImperativeHandleHook />,
+}
     ],
     },
   ])

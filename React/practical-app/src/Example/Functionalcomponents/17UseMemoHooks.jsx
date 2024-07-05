@@ -36,6 +36,13 @@ const UseMemoHooks = () => {
             <p>
             React useMemo() hook is a function that caches the value produced from an expensive function used inside a React component. It accepts the expensive function and works by storing the value produced from the function when that is passed the same arguments repeatedly.
             </p>
+            <p>
+            that is passed the same arguments repeatedly.
+            </p>
+            <p>
+            UseMemo react hooks chhe jeno upyog function or calculation na parinamo ne yaad kari ne optimize karva de chhe
+
+            </p>
 
         </div>
     );

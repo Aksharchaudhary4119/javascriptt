@@ -52,6 +52,9 @@ const UseEffectHooksInFunctionalCompo = () => {
             <p>
             The purpose of useLayoutEffect is to let your component use layout information for rendering: Render the initial content. Measure the layout before the browser repaints the screen. Render the final content using the layout information you've read.
             </p>
+            <p>
+            useLayoutEffect is to let your component use layout information for rendering:
+            </p>
 
         </>
     );
