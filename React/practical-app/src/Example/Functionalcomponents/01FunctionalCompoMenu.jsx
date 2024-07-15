@@ -23,6 +23,7 @@ const FunctionalCompoMenu = () => {
                         <li><Link to="statelifting">StateLifting</Link> </li>
                         <li><Link to="usereducerhook">UseReducerHook</Link> </li>
                         <li><Link to="useimperativehandle">useImperativeHandle</Link> </li>
+                        <li><Link to="interviewtask">Interview Task</Link> </li>
 
                     </ol>                           
                 </div>

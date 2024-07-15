@@ -17,6 +17,7 @@ import UseMemoHooks from "./17UseMemoHooks.jsx"
 import StateLifting from "./18StateLifting.jsx"
 import UseReducerHook from './20UseReducerHook.jsx';
 import UseImperativeHandleHook from "./21UseImperativeHandleHook/01main.jsx"
+import InterviewTask from "./22HoneyCom/01ParentCompo.jsx"
 
 
 
@@ -78,6 +79,9 @@ const FunctionalComponentRoute = () => {
   },{
     path: "useimperativehandle",
     element: <UseImperativeHandleHook />,
+  },{
+    path: "interviewtask",
+    element: <InterviewTask />,
 }
     ],
     },
