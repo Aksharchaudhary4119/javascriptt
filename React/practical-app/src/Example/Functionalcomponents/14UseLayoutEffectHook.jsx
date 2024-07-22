@@ -56,6 +56,14 @@ const UseEffectHooksInFunctionalCompo = () => {
             useLayoutEffect is to let your component use layout information for rendering:
             </p>
 
+            <h3>1.What is the useEffect hook and how is it different from the useLayoutEffect hook?</h3>
+            <p> The useEffect hook is used in React functional components to manage side effects. The useLayoutEffect hook is a subhook of the useEffect hook that is used for side effects that must be performed before the browser paints the next frame.</p>
+
+            <h3>2.useLayoutEffect</h3>
+            <p>The React JS useLayoutEffect works similarly to useEffect but rather works asynchronously like the useEffect hook, it fires synchronously after all DOM loading is done loading. This is useful for synchronously re-rendering the DOM and also to read the layout from the DOM. But to prevent blocking the page loading, we should always use the useEffect hook.</p>
+
+            <h3></h3>
+
         </>
     );
 };
